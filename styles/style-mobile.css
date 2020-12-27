@@ -480,3 +480,29 @@ main{
     background-position: center;
     background-repeat: no-repeat;
 }
+footer{
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    background-color: var(--bitconin-orange);
+}
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .container-redes ul{
+    font-size: 1.4rem;  
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.container-redes li{
+    margin: 10px 0;
+}
+.container-redes a{
+    text-decoration: none;
+    color: var(--just-white);
+}
