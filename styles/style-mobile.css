@@ -6,6 +6,7 @@
 html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 :root{
     --bitconin-orange: #F7931A;
@@ -391,4 +392,91 @@ main{
     padding-top: 60px;
     font-family: "DM Sans";
     color: var(--just-white);
+}
+.main-plans-container{
+    width: 100%;
+    min-width: 320px;
+    text-align: center;
+    background-color: var(--oft-white);
+    padding-bottom: 64px;
+    padding-top: 34px;
+}
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.plans-container--card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 190px;
+    min-width: 190px;
+    height: 257px;
+    margin: 0 10px;
+    background-color: var(--just-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    margin-top: 50px;
+}
+.plans-container--card .recommended{
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 50px);
+    width: 100px;
+    padding: 8px;
+    font-family: "Inter";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: var(--just-white);
+    background-color: var(--bitconin-orange);
+    border-radius: 8px;
+}
+.plans-container--card h3{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    padding-top: 31px;
+    margin-bottom: 8px;
+}
+.plans-container--card-price{
+    font-size: 5.2rem;
+    font-family: "Inter";
+    font-weight: bold;
+    line-height: 6.3rem;
+    margin-bottom: 16px;
+}
+.plans-container--card-saving{
+    font-size: 1.2rem;
+    font-family: "Inter";
+    font-weight: normal;
+    line-height: 1.5rem;
+    margin-bottom: 16px;
+    padding: 0 16px;
+    color: #757575;
+}
+.plans-container--card button{
+    padding: 15px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: var(--bitconin-orange) 2px solid;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+.logo-dolar{
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: 25px;
+}
+.arrow{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+    background-image: url(../assets/icons/orange-right-arrow.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
