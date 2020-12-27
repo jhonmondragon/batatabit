@@ -403,6 +403,7 @@ main{
 }
 .plans-container--slider{
     display: flex;
+    justify-content: center;
     height: 316px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
@@ -483,7 +484,6 @@ main{
 footer{
     display: flex;
     width: 100%;
-    min-width: 320px;
     height: 150px;
     background-color: var(--bitconin-orange);
 }
